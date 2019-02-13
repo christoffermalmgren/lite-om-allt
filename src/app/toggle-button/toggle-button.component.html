@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <button class="btn btn-primary" type="submit">{{ getButtonText() }}</button>
+  <div class="form-group" *ngIf="showLogin">
+    <div class="row">
+      <div class="col-xs-12">
+        <label for="name">Username</label>
+        <input type="text" name="" id="name" class="form-control" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label for="password">Password</label>
+        <input type="text" name="" id="password" class="form-control" />
+      </div>
+    </div>
+  </div>
+</form>
