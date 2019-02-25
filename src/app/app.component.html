@@ -1,5 +1,17 @@
 <!-- <app-name-editor></app-name-editor> -->
 <!-- <app-sort></app-sort> -->
 <!-- <app-profile-editor></app-profile-editor> -->
-<app-toggle-button></app-toggle-button>
+<!-- <app-toggle-button></app-toggle-button> -->
 <!-- <router-outlet></router-outlet> -->
+
+<!-- todo-app -->
+
+<div class="App">
+  <div class="todo-wrapper">
+    <app-header></app-header>
+    <app-submit-todo></app-submit-todo>
+    <div *ngFor="let todo of td.getTodos()">
+      <app-todo-item [todo]="todo"></app-todo-item>
+    </div>
+  </div>
+</div>
